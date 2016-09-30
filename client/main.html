@@ -3,10 +3,19 @@
 </head>
 
 <body>
+  <div class="container">
+    <header class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Microscope</a>
+      </div>
+    </header>
+    <div id="main">
+      {{> postsList}}
+    </div>
+  </div>
   <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
-  {{> info}}
+  {{> hello}} {{> info}}
 </body>
 
 <template name="hello">
